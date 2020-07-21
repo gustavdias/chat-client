@@ -21,8 +21,10 @@ const Chat = ({ location }) => {
 
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = ('localhost:5000'||'https://super-react-chat.herokuapp.com/');
+  // const ENDPOINT = ('localhost:5000'||'https://super-react-chat.herokuapp.com/');
   // const ENDPOINT = "localhost:5000";
+  const ENDPOINT = 'https://super-react-chat.herokuapp.com/';
+
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
